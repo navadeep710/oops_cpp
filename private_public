@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+class Human{
+private:
+	int age;
+	string name;
+public:
+	void setdata(int val,string word){
+		age = val;
+		name = word;
+	}
+	void getdata(){
+		cout<<"Hi i am "<<name<<" "<<"with age "<<age<<endl;
+	}
+};
+int main(){
+	Human a;
+	a.setdata(18,"NAVADEEP");
+	a.getdata();
+	return 0;
+}
