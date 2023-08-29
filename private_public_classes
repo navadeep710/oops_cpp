@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+class Cricket{
+private:
+	int runs,wickets;
+	string batsmen,bowler;
+public:
+	Cricket(){
+		runs = 10000;
+		wickets = 50;
+		batsmen = "Sachin";
+		bowler = "Jadeja";
+	}
+	Cricket(int r,int w,string b,string bo){
+		runs = r;
+		wickets = w;
+		batsmen = b;
+		bowler = bo;
+	}
+
+	void display(){
+		cout<<runs<<" "<<wickets<<" "<<batsmen<<" "<<" "<<bowler<<endl;
+	}
+};
+int main(){
+	Cricket c1;
+	c1.display();
+	Cricket c2(20000,200,"Kohli","Siraj");
+	c2.display();
+	return 0;
+}
