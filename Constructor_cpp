@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+class Car{
+    public:
+    int year;
+    string model;
+    string brand;
+    Car(int x,string y,string z);//Constructor Declaration
+};
+Car::Car(int x,string y,string z){//Defining Constructor outside the class
+    year = x;
+    model = y;
+    brand = z;
+}
+int main(){
+    Car c1(1990,"A-8","AUDI");
+    cout<<c1.year<<" "<<c1.model<<" "<<c1.brand<<" "<<endl;
+    return 0;
+}
