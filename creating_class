@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+class Human{
+public:
+	string name;
+	void display(){
+		cout<<name<<endl;
+	}
+};
+int main(){
+	Human Navadeep,surya;
+	Navadeep.name = "Navadeep";
+	Navadeep.display();
+	surya.name = "Surya";
+	surya.display();
+
+	Human * balayya = new Human();
+	balayya->name = "praveen";
+	balayya->display();
+	return 0;
+}
