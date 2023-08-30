@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+class   Anime{
+  private:
+    int genres;
+    string hentai;
+    string shojo;
+    string shounen;
+  public:
+    Anime(){
+        genres = 4;
+        hentai = "Redo of the healer";
+        shojo = "Your name";
+        shounen = "Naruto";
+    }
+    Anime(int g,string h,string s,string sh){
+        genres = g;
+        hentai = h;
+        shojo = s;
+        shounen = sh;
+    }
+    void print(){
+        cout<<genres<<endl<<" "<<hentai<<endl<<" "<<shojo<<endl<<" "<<shounen<<endl;
+        
+    }
+};
+int main(){
+    Anime a1;
+    a1.print();
+    return 0;
+}
