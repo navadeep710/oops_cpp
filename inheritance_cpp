@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+class Human{
+public:
+	int age;
+	string name;
+	void SetName(string myname){
+		name = myname;
+	}
+};
+class Student : public Human{
+public:
+	int id;
+	void SetId(int val){
+		id = val;
+	}
+};
+int main(){
+	Student Navadeep;
+	Navadeep.id = 1234;
+	Navadeep.name = "NAVADEEP";
+	cout<<Navadeep.name<<endl;
+	cout<<Navadeep.id<<endl;
+	return 0;
+}
