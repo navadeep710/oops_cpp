@@ -1,0 +1,36 @@
+#include<iostream>
+using namespace std;
+class Vehicle{
+  public:
+    int year;
+    string model;
+    
+    Vehicle(){
+      year = 1991;
+      model = "A-8";
+  }
+    Vehicle(int y,int m){
+        year = y;
+        model = m;
+    }
+
+};
+class Car : public Vehicle{
+  public:
+    string brand;
+  Car(){
+      brand = "BMW";
+  }
+  Car(string b){
+      brand = b;
+  }
+  void display(){
+      cout<<year<<" "<<model<<" "<<brand<<endl;
+  }
+};
+int main(){
+    Car c;
+    c.display();
+  
+    return 0;
+}
