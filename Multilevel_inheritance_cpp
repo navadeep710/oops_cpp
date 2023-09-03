@@ -1,0 +1,40 @@
+#include<iostream>
+using namespace std;
+class Messi{
+  public:
+  int goals;
+  Messi(){
+      goals = 820;
+  }
+  Messi(int g){
+      goals = g;
+  }
+};
+class Ronaldo : public Messi{
+  public:
+    int matches;
+    Ronaldo(){
+        matches = 1100;
+    }
+    Ronaldo(int m){
+        matches = m;
+    }
+};
+class Neymar : public Ronaldo{
+  public:
+  string country;
+  Neymar(){
+      country = "Brazil";
+  }
+  Neymar(string c){
+      country = c;
+  }
+  void display(){
+      cout<<goals<<" "<<endl<<matches<<" "<<endl<<country<<" "<<endl;
+  }
+};
+int main(){
+    Neymar N;
+    N.display();
+    return 0;
+}
