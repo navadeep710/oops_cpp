@@ -1,0 +1,40 @@
+#include<iostream>
+using namespace std;
+class Dhoni{
+  public:
+    int matches;
+    Dhoni(){
+        matches = 550;
+    }
+    Dhoni(int m){
+        matches = m;
+    }
+};
+class Sachin{
+    public:
+    int runs;
+    Sachin(){
+        runs = 30000;
+    }
+    Sachin(int r){
+        runs = r;
+    }
+};
+class Virat : public Dhoni,public Sachin{
+  public:
+  int centuries;
+  Virat(){
+      centuries = 76;
+  }
+  Virat(int c){
+      centuries = c;
+  }
+  void display(){
+      cout<<matches<<" "<<runs<<" "<<centuries<<endl;
+  }
+};
+int main(){
+    Virat v;
+    v.display();
+    return 0;
+}
