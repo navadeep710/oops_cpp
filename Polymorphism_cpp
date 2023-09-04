@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+class Animal{
+    public:
+        void function(){
+            cout<<"It creates various sounds!!"<<endl;
+        }
+};
+class Dog : public Animal{
+  public:
+    void function(){
+        cout<<"Dog makes Bow Bow Sound!!"<<endl;
+    }
+};
+class Cat : public Animal{
+  public:
+    void function(){
+        cout<<"Cat makes meow meow sound!!"<<endl;
+    }
+};
+int main(){
+    Animal Myanimal;
+    Dog Mydog;
+    Cat Mycat;
+    Myanimal.function();
+    Mydog.function();
+    Mycat.function();
+    return 0;
+}
