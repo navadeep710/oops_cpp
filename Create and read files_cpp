@@ -1,0 +1,9 @@
+#include<iostream>
+#include<fstream>
+using namespace std;
+int main(){
+    ofstream MyFile("File.txt");
+    MyFile<<"Files are difficult but fun!!!";
+    MyFile.close();
+    return 0;
+}
