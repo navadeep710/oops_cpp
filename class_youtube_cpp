@@ -1,0 +1,42 @@
+#include<iostream>
+using namespace std;
+class Youtube{
+  public:
+  string channel_name;
+  string owner;
+  string subscribers;
+  int likes;
+  int dislikes;
+  Youtube(){
+      channel_name = "ScoutOP";
+      owner = "Scout";
+      subscribers = "5.3M";
+      likes = 100000;
+      dislikes = 10;
+  }
+  Youtube(string c,string o,string s,int l){
+      channel_name = c;
+      owner = o;
+      subscribers = s;
+      likes = l;
+  }
+   Youtube(string c,string o,string s,int l,int d){
+      channel_name = c;
+      owner = o;
+      subscribers = s;
+      likes = l;
+      dislikes = d;
+  }
+  
+  void display(){
+      cout<<channel_name<<" "<<owner<<" "<<subscribers<<" "<<likes<<" "<<dislikes<<endl;
+  }
+};
+
+int main(){
+    Youtube y;
+    y.display();
+    Youtube y1("SOUL MORTAL","MATHUR","6.3M",10000,100);
+    y1.display();
+    return 0;
+}
